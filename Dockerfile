@@ -146,7 +146,7 @@ RUN apk --no-cache add shadow \
     && chmod -R g+w /var/cache/nginx \
     && apk del shadow
 
-EXPOSE 80
+EXPOSE 8080
 
 STOPSIGNAL SIGTERM
 
