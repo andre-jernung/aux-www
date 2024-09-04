@@ -138,7 +138,7 @@ RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY aux-www.conf /etc/nginx/conf.d/
-COPY index.html /usr/share/nginx/html/
+COPY *.html /usr/share/nginx/html/
 
 RUN apk --no-cache add shadow \
     && usermod -u 1001 nginx\
